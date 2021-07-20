@@ -17,7 +17,7 @@ def Back(depth):
                 Back(depth+1)
                 result.pop()
 
-                for j in range(i+1,N):
+                for j in range(i+1,N): # 1,2 / 2,1 이런 중복 허용x니까 i는 계속 방문했다고 체크함
                     visited[j]=0
 
 
